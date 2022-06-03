@@ -38,7 +38,7 @@ body {
 }
 
 #showcase h1{
-  background: black;
+  color: black;
   background-clip: text;
   color: transparent;
 }
