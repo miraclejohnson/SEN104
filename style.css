@@ -40,7 +40,6 @@ body {
 #showcase h1{
   color: black;
   background-clip: text;
-  color: transparent;
 }
 .container {
   width: 80%;
