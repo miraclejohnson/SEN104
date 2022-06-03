@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Models</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script>
+		var i = 0; // Start point
+		var images = ['4053.jpg', 'FIA552CK4EF4KJA.jpg', 'images.jpeg', 'image4.jpg']
+		
+		// Change Image
+		function changeImg(){
+			document.slide.src = "images/simpleslideshow/"+images[i];
+	
+			if(i < images.length - 1){
+				i++;
+			} else {
+				i = 0;
+			}
+	
+			setTimeout("changeImg()", 1000);
+		}
+		window.onload = changeImg;
+	</script>
+	<header>
+		<div class='container'>
+			<div class="topnav">
+			  <h1><b>.M!rage</b></h1>
+			  <a href="index.html">Home</a>
+			  <a href="models.html">Models</a>
+			  <a href="contact.html">Contact Us</a>
+			  <a href="cv.html" target=blank class="split">Cv</a>
+		  </div>
+		</div>
+
+	</header>
+	<img name="slide" width="100%" height="100%">
+	
+</body>
+</html>
